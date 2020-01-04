@@ -12,3 +12,5 @@
       user:
         name: "{{ansible_ssh_user}}"
         password: "{{ 'lawn-vex' | password_hash('sha512') }}"
+        groups: docker
+        append: yes
