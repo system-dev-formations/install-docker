@@ -10,5 +10,5 @@
       apt: name=docker.io state=latest update_cache=yes
     - name: change user's password on all hosts
       user:
-        name: "{{ansible_ssh_user}}
+        name: "{{ansible_ssh_user}}"
         password: "{{ 'lawn-vex' | password_hash('sha512') }}"
