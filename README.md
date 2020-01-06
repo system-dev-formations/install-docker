@@ -6,7 +6,7 @@
     cd install-docker/
     sudo apt-get update
     sudo apt-get upgrade
-    sudo apt-get install python3 python3-pip python3-venv
+    sudo apt-get -y install python3 python3-pip python3-venv
     python3 -m venv venv
     source venv/bin/activate
     python -V
@@ -21,4 +21,19 @@
 ```shell script
    ansible-playbook -i inventory playbook
 ```
+## Check whether the setup is ok
+```shell script
+   id 
+```
+check if the user ubuntu is in group docker   
+otherwise log out and log in again 
+and type 
+```shell script
+   docker ps
+```
+and run your first container 
+```shell script
+  docker run docker/whalesay cowsay Hello-world!
+```
+
 
