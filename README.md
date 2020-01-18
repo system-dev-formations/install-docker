@@ -25,8 +25,7 @@
 ```shell script
    id 
 ```
-check if the user ubuntu is in group docker   
-otherwise log out and log in again 
+check if the user ubuntu is in group docker otherwise log out and log in again 
 and type 
 ```shell script
    docker ps
